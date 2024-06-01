@@ -122,6 +122,9 @@ func getFirstLastDigitOrString(words []string) []int {
 			if err == nil {
 				nums = append(nums, digit)
 			}
+			if err != nil {
+				fmt.Println("Failed at appending to nums")
+			}
 		}
 	}
 
